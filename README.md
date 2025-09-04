@@ -1,6 +1,7 @@
 README – Q2_Temperature.py
 
 Program Overview:
+
 This program analyses temperature data from multiple Australian weather stations stored 
 in CSV files under the "temperatures" folder. Each file represents one year of data.
 
