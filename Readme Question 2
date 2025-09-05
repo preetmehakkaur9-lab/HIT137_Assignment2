@@ -1,0 +1,57 @@
+README – QUESTION 1
+
+Program overview: This Python program reads a text file ("raw_text.txt"), encrypts its contents using a simple custom encryption method, writes the encrypted content to "encrypted_text.txt", then decrypts it to "decrypted_text.txt", and verifies that the decoded file matches the original.
+ 
+ The program follows the assignment instructions exactly for encryption:
+  Lowercase letters:
+  - Letters in 'a' to 'm' are shifted forward by (shift1 * shift2) positions.
+  - Letters in 'n' to 'z' are shifted backward by (shift1 + shift2) positions.
+ 
+Uppercase letters:
+  - Letters in 'A' to 'M' are shifted backward by shift1 positions.
+  - Letters in 'N' to 'Z' are shifted forward by (shift2 squared) positions.
+ 
+Other characters: 
+All the Spaces, tabs, newlines, numbers, and special characters remain unchanged.
+ 
+Program Functions:
+Encrypt_char(char, shift1, shift2):
+Encrypts a single character according to the rules above.
+Decrypt_using_original(original_file, encrypted_file, output_file, shift1, shift2):
+Decrypts the encrypted file by reversing the shifts applied to each character, using the original file to determine the correct shift.
+Writes the decrypted content to "decrypted_text.txt".
+Process_file(input_file, output_file, shift1, shift2, mode):
+Reads a file, encrypts or decrypts it character by character, and writes the result to an output file.
+Verify files(file1, file2):
+Compares two files (normalizing line endings) and prints whether they exactly match.
+ 
+Usage Instructions:
+Place "raw_text.txt" in the same directory as the program.
+Run the program.
+When prompted, enter integer values for shift1 and shift2
+The program will:
+Encrypt the contents of "raw_text.txt" → "encrypted_text.txt"
+Decrypt the encrypted file → "decrypted_text.txt"
+Verify if ecryption matches the original file and display the result.
+ 
+Output:
+encrypted_text.txt: It contains the encrypted version of the original text.
+decrypted_text.txt: The decrypted version should exactly match the original file.
+Console messages indicating the success of encryption, decryption, and verification.
+ Things to be noted:
+ 1. Ensure "raw_text.txt" is encoded in UTF-8.
+ 2. The program works reliably on Windows, Linux, or Mac.
+ 3. The decryption function requires the original file to correctly reverse the shifts, because the encryption depends on the original letter range (a–m, n–z, etc.).
+Author: Mehakpreet kaur
+Date: 05/09/2025
+
+
+
+
+
+
+
+
+
+
+
